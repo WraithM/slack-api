@@ -1,8 +1,9 @@
-{-# LANGUAGE TemplateHaskell, LambdaCase #-}
+{-# LANGUAGE LambdaCase      #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Web.Slack.Types.Preferences where
 
 import           Data.Aeson.TH
-import Data.Text (Text)
+import           Data.Text       (Text)
 import           Web.Slack.Utils
 --import Control.Lens.TH
 
@@ -87,7 +88,6 @@ data Preferences = Preferences
                  , _prefMutedChannels                   :: Text
                  , _prefPrivacyPolicySeen               :: Bool
                  , _prefSearchExcludeBots               :: Bool
-                 , _prefFuzzyMatching                   :: Bool
                  } deriving Show
 
 
